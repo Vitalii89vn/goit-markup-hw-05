@@ -8,6 +8,8 @@
   --btn-background-color: #f5f4fa;
   --btn-color-hover: #188ce8;
   --border-color: #eeeeee;
+  --icons-color: #afb1b8;
+
 }
 body {
   font-family: 'Roboto', 'Raleway', sans-serif;
@@ -90,10 +92,27 @@ li {
 .contacts-header:focus {
   color: var(--color-hover-focus);
 }
-.contact-list {
-  padding-top: 32px;
-  padding-bottom: 32px;
+ 
+.icon-mail, .icon-tel {
+width: 16px;
+height: 16px;
+margin-right: 10px;
+fill: var(--text-color);
 }
+.contacts-header {
+  display: flex;
+    align-items: flex-end;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  
+}
+.contacts-header:hover .icon-mail,
+.contacts-header:focus .icon-mail,
+.contacts-header:hover .icon-tel,
+.contacts-header:focus .icon-tel {
+  fill: var(--color-hover-focus);
+   }
+
 .contact-list:not(:last-child) {
   margin-right: 30px;
 }
@@ -160,8 +179,17 @@ li {
 .benefits {
   padding-bottom: 0;
 }
+
 .benefits-list {
   display: flex;
+}
+.benefits-icons {
+  display: block;
+  padding: 25px 100px;
+  margin-bottom: 30px;
+   fill: var(--main-text-color);
+  max-height: 120px;
+  background-color: var(--btn-background-color);
 }
 .benefits-item {
   width: calc((100%-90px) / 4);

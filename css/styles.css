@@ -15,7 +15,7 @@ body {
   letter-spacing: 0.03em;
   font-size: 14px;
   color: var(--main-text-color);
-  max-width: 1600px;
+ 
 }
 h1,
 h2,
@@ -124,6 +124,8 @@ li {
 .page-title {
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/hero.png);
+  max-width: 1600px;
+  margin: 0 auto;
   background-size: cover;
   padding-bottom: 200px;
   padding-top: 200px;
@@ -183,11 +185,12 @@ li {
   display: flex;
 }
 .benefits-icons {
-  display: block;
-  padding: 25px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 30px;
   fill: var(--main-text-color);
-  max-height: 120px;
+  height: 120px;
   background-color: var(--btn-background-color);
 }
 .benefits-item {
@@ -261,8 +264,8 @@ li {
 }
 .social-link-worker {
   display: flex;
-  padding-left: 32px;
-  padding-right: 32px;
+  margin-left: 32px;
+  margin-right: 32px;
   justify-content: space-between;
   margin-bottom: 30px;
 }
@@ -302,7 +305,6 @@ li {
   border-radius: 4px;
   justify-content: center;
   align-items: center;
-  padding: 16px 32px;
 }
 .our-clients-icon {
   fill: var(--icons-color);
@@ -325,6 +327,7 @@ li {
 }
 .page-footer > .container {
   display: flex;
+  align-items: baseline;
 }
 .logo-footer {
   padding: 0;
@@ -365,7 +368,6 @@ li {
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--second-text-color);
-  padding-top: 12px;
   margin-bottom: 20px;
 }
 .social-link-footer {
@@ -392,6 +394,8 @@ li {
 .social-list-item-footer:not(:last-child) {
   margin-right: 10px;
 }
+/*-----------------portfolio-----*/
+
 .btn-product {
   padding: 6px 22px 6px 22px;
   margin-right: 8px;
@@ -423,7 +427,17 @@ li {
   flex-wrap: wrap;
   flex-basis: calc((100%-60px) / 3);
 }
-.list.product:hover {
+.list-product {
+  display: block;
+
+}
+.list-product {
+  list-style: none;
+  text-decoration: none;
+  color: var(--main-text-color);
+}
+.list-product:hover,
+.list-product:focus {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   cursor: pointer;
 }

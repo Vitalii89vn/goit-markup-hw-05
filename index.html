@@ -61,7 +61,18 @@
             Ефективні рішення для <br />
             вашого бізнесу
           </h1>
-          <button type="button" class="btn btn-title">Замовити послугу</button>
+          <button type="button" class="btn btn-title" data-modal-open>Замовити послугу</button>
+          <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+              <div class="">
+              <button type="button" class="btn btn-close-item" data-modal-close>
+                <svg class="btn-close-icon" width="18" height="18">
+                  <use href="./images/icons.svg#icon-close"></use>
+                </svg>
+              </button>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       <section class="benefits section">
@@ -119,7 +130,7 @@
         <div class="container">
           <h2 class="our-job-title">Чим ми займаємось</h2>
           <ul class="our-job-section">
-            <li class="list img-job">
+            <li class="list img-job our-apps">
               <img
                 src="./images/ourjob1.jpg"
                 alt="людина працює за комп'ютером"
@@ -127,8 +138,11 @@
                 height="294"
                 class="img"
               />
+              <div class="apps">
+                <p class="apps-title">десктопні додатки</p>
+              </div>
             </li>
-            <li class="list img-job">
+            <li class="list img-job our-apps">
               <img
                 src="./images/ourjob2.jpg"
                 alt="людина працює на смартфоні"
@@ -136,8 +150,11 @@
                 height="294"
                 class="img"
               />
+                <div class="apps">
+                  <p class="apps-title">мобільні додатки</p>
+                </div>
             </li>
-            <li class="list img-job">
+            <li class="list img-job our-apps">
               <img
                 src="./images/ourjob3.jpg"
                 alt="людина працює на планшеті"
@@ -145,6 +162,9 @@
                 height="294"
                 class="img"
               />
+                <div class="apps">
+                  <p class="apps-title">дизайнерські рішення</p>
+                </div>
             </li>
           </ul>
         </div>
@@ -416,5 +436,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>

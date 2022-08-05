@@ -278,11 +278,10 @@ li {
   left: 0;
   top: 0;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
   z-index: 2;
 }
-
 
  .backdrop.is-hidden{
   opacity: 1;
@@ -295,29 +294,33 @@ li {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  min-height: 200px;   /*581*/
-  min-width: 528px;
+  min-height: 56.7400%;   /*581   56,74%*/
+  width: 33%;
   background-color: var(--second-text-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   z-index: 3;
-}
+}/*
 .btn-close{
 display: flex;
 justify-content: center;
 align-items: center;
-}
+}*/
 .btn-close-item {
-      width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+    width: 30px;
     height: 30px;
+    margin-left: auto;
+    margin-right: 8px;
+    margin-top: 8px;
     background: var(--second-text-color);
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
 }
 .btn-close-icon {
    fill: #000000;
-
-
 }
 /*--------------------our-comand--------------------*/
 
@@ -544,6 +547,7 @@ div.our-product:not(:nth-child(3n)) {
 div.our-product:not(:nth-last-child(-n + 3)) {
   margin-bottom: 30px;
 }
+
 .product {
   background-color: var(--second-text-color);
 }
@@ -565,4 +569,22 @@ div.our-product:not(:nth-last-child(-n + 3)) {
   font-size: 16px;
   line-height: 1.88;
   color: var(--text-color);
+}
+/*  -------------- OVERLAY-------------*/
+.our-product {
+  position: relative;
+}
+.overlay-text {
+  padding: 63px 24px;
+  font-size: 18px;
+  line-height: 1.56;
+  color: var(--second-text-color);
+}
+.overlay-product{
+  position: absolute;
+  bottom: 110px;
+  left: 0;
+  width: 100%;
+  height: 294px;
+  background-color: rgba(33, 150, 243, 0.9);
 }

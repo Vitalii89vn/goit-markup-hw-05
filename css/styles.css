@@ -258,22 +258,21 @@ li {
   position: relative;
 }
 .apps {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
   height: 70px;
   background: rgba(47, 48, 58, 0.8);
-  z-index: 1;
 }
 .apps-title {
   font-weight: bold;
   line-height: 1.14;
-  text-align: center;
   text-transform: uppercase;
   color: var(--second-text-color);
-  padding-top: 27px;
-  padding-bottom: 27px;
 }
 /*--------------modal----------------------------*/
 
